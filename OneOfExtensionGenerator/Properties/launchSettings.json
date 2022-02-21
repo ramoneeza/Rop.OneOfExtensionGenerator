@@ -5,7 +5,7 @@
     },
     "DebugComponent": {
       "commandName": "DebugRoslynComponent",
-      "targetProject": "..\\pruebaborrar\\pruebaborrar.csproj"
+      "targetProject": "..\\test.oneofextensiongenerator\\test.oneofextensiongenerator.csproj"
     }
   }
 }

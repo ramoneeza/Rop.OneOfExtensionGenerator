@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+	  <Title>Rop.OneOfExtension.Annotations</Title>
 	  <RootNamespace>Rop.OneOfExtension.Annotations</RootNamespace>
 	  <TargetFramework>netstandard2.0</TargetFramework>
 	  <PackageTags>helper-classes;extensions;oneof;annotations</PackageTags>
@@ -15,5 +16,10 @@
 	  <PackageProjectUrl>https://github.com/ramoneeza/Rop.OneOfExtension.Annotations</PackageProjectUrl>
 	  <PackageReadmeFile>Readme.md</PackageReadmeFile>
   </PropertyGroup>
-
+	<ItemGroup>
+		<Compile Remove="Packs\**" />
+		<EmbeddedResource Remove="Packs\**" />
+		<None Remove="Packs\**" />
+		<None Include="..\Readme.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
 </Project>
