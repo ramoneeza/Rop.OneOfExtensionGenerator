@@ -5,9 +5,14 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OneOfExtensionGenerator", "OneOfExtensionGenerator\OneOfExtensionGenerator.csproj", "{7C2FDE2C-87B5-41D8-ADA2-D1A3EBD7E4BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.OneOfExtensionGenerator", "Test.OneOfExtensionGenerator\Test.OneOfExtensionGenerator.csproj", "{08ECD537-4F25-412D-9ED0-7892727C3525}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test.OneOfExtensionGenerator", "Test.OneOfExtensionGenerator\Test.OneOfExtensionGenerator.csproj", "{08ECD537-4F25-412D-9ED0-7892727C3525}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneOfExtension.Annotations", "OneOfExtension.Annotations\OneOfExtension.Annotations.csproj", "{ACE440F0-64CC-4F4E-A7A9-F48AC083B9F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OneOfExtension.Annotations", "OneOfExtension.Annotations\OneOfExtension.Annotations.csproj", "{ACE440F0-64CC-4F4E-A7A9-F48AC083B9F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{59331180-163F-4B78-B4BA-57F90644A5CA}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
