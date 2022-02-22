@@ -41,7 +41,9 @@ namespace Rop.OneOfExtensionGenerator
                 FirstParameterName = firstparametername,
                 RestOfParameters = p.Skip(1).Select(pp => pp.ToString()).ToArray(),
                 RestOfVariables = p.Skip(1).Select(pp => pp.Identifier.ToString()).ToArray(),
-                TypesToAugment = typesToAugment
+                TypesToAugment = typesToAugment,
+                ConstraintClauses = member.ConstraintClauses.ToString()??"",
+                TypeParameterList = member.TypeParameterList?.ToString()??""
             };
             MethodsToAugment.Add(mta);
         }

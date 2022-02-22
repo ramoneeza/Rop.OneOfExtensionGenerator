@@ -8,5 +8,7 @@
         public string[] TypesToAugment { get; set; }
         public string[] RestOfParameters { get; set; }
         public string[] RestOfVariables { get; set; }
+        public string ConstraintClauses { get; set; }
+        public string TypeParameterList { get; set; }
     }
 }

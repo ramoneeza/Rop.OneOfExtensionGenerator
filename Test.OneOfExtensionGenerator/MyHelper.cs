@@ -14,6 +14,12 @@ namespace Test.OneOfExtensionGenerator
         {
             return ab.Match(a => a.WriteValueA, b => b.WriteValueB);
         }
+
+        [OneOfSplit]
+        private static object _GetClass<T>(OneOf<A, B, C> abc) where T : class
+        {
+            return abc.Match<object>(a => a, b => b, c => c);
+        }
     }
 
 }

@@ -59,6 +59,7 @@ namespace Rop.OneOfExtensionGenerator
                 sb.Append(methodToAugment.ReturnType);
                 sb.Append(" ");
                 sb.Append(finalid);
+                sb.Append(methodToAugment.TypeParameterList);
                 sb.Append("(this ");
                 sb.Append(gtype);
                 sb.Append(" ");
@@ -68,10 +69,12 @@ namespace Rop.OneOfExtensionGenerator
                     sb.Append(", ");
                     sb.Append(string.Join(", ", methodToAugment.RestOfParameters));
                 }
-                sb.AppendLine(")");
+                sb.Append(")");
+                sb.AppendLine(methodToAugment.ConstraintClauses);
                 sb.AppendLine("\t\t{");
                 sb.Append("\t\t\treturn ");
                 sb.Append(methodToAugment.Identifier);
+                sb.Append(methodToAugment.TypeParameterList);
                 sb.Append("(");
                 sb.Append(methodToAugment.FirstParameterName);
                 if (methodToAugment.RestOfVariables.Length > 0)

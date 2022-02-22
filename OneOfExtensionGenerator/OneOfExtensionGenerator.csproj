@@ -9,7 +9,7 @@
 	  <PackageTags>helper-classes;extensions;oneof;source generator;roslyn</PackageTags>
 	  <Description>Source generator to create OneOf Helper Extensions</Description>
 	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	  <Version>1.0.1</Version>
+	  <Version>1.0.3</Version>
 	  <Authors>Ramon Ordiales Plaza</Authors>
 	  <Company>Ramon Ordiales Plaza</Company>
 	  <Copyright>2022 Ramon Ordiales</Copyright>
@@ -29,8 +29,9 @@
 		<None Remove="Packs\**" />
 		<None Include="..\Readme.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
-  <ItemGroup>
-	  <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.0.1" PrivateAssets="all" />
+  <ItemGroup Label="Package References">
+	  <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.1.0" PrivateAssets="all" />
 	  <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.3" PrivateAssets="all" />
   </ItemGroup>
+	
 </Project>
