@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
 	  <PackageId>Rop.OneOfExtensionGenerator</PackageId>
@@ -9,7 +9,7 @@
 	  <PackageTags>helper-classes;extensions;oneof;source generator;roslyn</PackageTags>
 	  <Description>Source generator to create OneOf Helper Extensions</Description>
 	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	  <Version>1.0.3</Version>
+	  <Version>1.0.4</Version>
 	  <Authors>Ramon Ordiales Plaza</Authors>
 	  <Company>Ramon Ordiales Plaza</Company>
 	  <Copyright>2022 Ramon Ordiales</Copyright>

@@ -72,7 +72,10 @@ namespace Rop.OneOfExtensionGenerator
                 sb.Append(")");
                 sb.AppendLine(methodToAugment.ConstraintClauses);
                 sb.AppendLine("\t\t{");
-                sb.Append("\t\t\treturn ");
+                if (methodToAugment.ReturnType!="void")
+                    sb.Append("\t\t\treturn ");
+                else
+                    sb.Append("\t\t\t");
                 sb.Append(methodToAugment.Identifier);
                 sb.Append(methodToAugment.TypeParameterList);
                 sb.Append("(");
